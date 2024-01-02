@@ -1,0 +1,10 @@
+Created schema using mongoose for hospital,todo,ecommerce.
+integrated frontend and backend.
+learnt about proxy and cors.
+
+template :
+
+import mongoose from "mongoose"
+const SchemaName = mongoose.Schema({},{timestamps: true})  // first object is where you define schema, second timestamp (createdat,updatedat)
+export const ModelName = mongoose.model("ModelNameindb",SchemaName)
+                                       //kya banana he , kisse banana he
