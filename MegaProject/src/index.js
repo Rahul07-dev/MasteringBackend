@@ -1,7 +1,10 @@
-import mongoose from "mongoose";
-import  DB_NAME  from "./constants";
+import dotenv from "dotenv"
+import connectDB from "./db/dbConnection.js"
+dotenv.config({
+    path : './.env'
+})
 
-
+connectDB();
 /*
 import express from "express";
 const app = express();
@@ -24,3 +27,5 @@ const app = express();
 
 
 })() // a function that would run, just at the same time it got initialized.
+
+*/
